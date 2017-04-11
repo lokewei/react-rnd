@@ -1,6 +1,6 @@
 {
   "name": "react-rnd-custom",
-  "version": "4.2.1",
+  "version": "4.2.2",
   "description": "Resizable and draggable component for React.",
   "main": "lib/index.js",
   "scripts": {
@@ -76,7 +76,7 @@
     "lib"
   ],
   "dependencies": {
-    "react-draggable-custom": "^1.4.5",
+    "react-draggable-custom": "^1.4.6",
     "react-resizable-custom": "^1.8.5"
   }
 }
