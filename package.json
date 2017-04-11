@@ -1,6 +1,6 @@
 {
-  "name": "react-rnd",
-  "version": "4.2.0",
+  "name": "react-rnd-custom",
+  "version": "4.2.1",
   "description": "Resizable and draggable component for React.",
   "main": "lib/index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bokuweb/react-resazable-and-movable.git"
+    "url": "https://github.com/lokewei/react-resazable-and-movable.git"
   },
   "keywords": [
     "react",
@@ -24,12 +24,12 @@
     "window",
     "component"
   ],
-  "author": "bokuweb",
+  "author": "lokewei",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bokuweb/react-resazable-and-movable/issues"
+    "url": "https://github.com/lokewei/react-resazable-and-movable/issues"
   },
-  "homepage": "https://github.com/bokuweb/react-resazable-and-movable/",
+  "homepage": "https://github.com/lokewei/react-resazable-and-movable/",
   "peerDependencies": {
     "react": ">=0.14.0",
     "react-dom": ">=0.14.0"
@@ -76,7 +76,7 @@
     "lib"
   ],
   "dependencies": {
-    "@bokuweb/react-draggable-custom": "^1.3.10",
-    "react-resizable-box": "^1.8.1"
+    "react-draggable-custom": "^1.4.5",
+    "react-resizable-custom": "^1.8.5"
   }
 }

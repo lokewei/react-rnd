@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
-import Draggable from '@bokuweb/react-draggable-custom';
-import Resizable from 'react-resizable-box';
+import Draggable from 'react-draggable-custom';
+import Resizable from 'react-resizable-custom';
 
 const boxStyle = {
   width: 'auto',
@@ -69,6 +69,7 @@ export default class ReactRnd extends Component {
     ]),
     zIndex: PropTypes.number,
     lockAspectRatio: PropTypes.bool,
+    parentScale: PropTypes.number
   };
 
   static defaultProps = {
@@ -195,7 +196,7 @@ export default class ReactRnd extends Component {
     const { className, style, onClick, onTouchStart,
             initial, minWidth, minHeight, maxWidth, maxHeight,
             bounds, moveAxis, dragHandlerClassName, lockAspectRatio,
-            moveGrid, resizeGrid, onDoubleClick } = this.props;
+            moveGrid, resizeGrid, onDoubleClick, parentScale } = this.props;
     const { x, y, zIndex } = this.state;
     return (
       <Draggable
@@ -212,6 +213,7 @@ export default class ReactRnd extends Component {
         passCoordinate
         x={x}
         y={y}
+        parentScale={parentScale}
       >
         <div style={Object.assign({}, boxStyle, { zIndex })}>
           <Resizable
@@ -234,6 +236,7 @@ export default class ReactRnd extends Component {
             handleStyle={this.props.resizerHandleStyle}
             grid={resizeGrid}
             lockAspectRatio={lockAspectRatio}
+            parentScale={parentScale}
           >
             {this.props.children}
           </Resizable>
